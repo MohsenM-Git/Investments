@@ -2,14 +2,14 @@
 
 
 <img src="https://github.com/MohsenM-Git/cppi/blob/main/intro.png" width="500"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/ms.png" width="500"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/cppi-1.png" width="550"/> 
+<img src="https://github.com/MohsenM-Git/cppi/blob/main/ms.png" width="350"/> 
+<img src="https://github.com/MohsenM-Git/cppi/blob/main/cppi-1.png" width="350"/> 
 <img src="https://github.com/MohsenM-Git/cppi/blob/main/dd-cppi.png" width="550"/> 
 <img src="https://github.com/MohsenM-Git/cppi/blob/main/dd-cap.png" width="550"/> 
 <img src="https://github.com/MohsenM-Git/cppi/blob/main/cnc.png" width="550"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/gbm.png" width="400"/>
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-1.png" width="400"/>
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-2.png" width="400"/>
+<img src="https://github.com/MohsenM-Git/cppi/blob/main/gbm.png" width="650"/>
+<img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-1.png" width="650"/>
+<img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-2.png" width="650"/>
 
 
 ## Content
