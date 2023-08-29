@@ -11,8 +11,8 @@
 ## Content
 * An Introduction to CPPI
 * CPPI Algorithm: 
-  - Extensions: Drawdown-Based CPPI
-  - CPPI with A Cap
+  - Extension: Drawdown-Based CPPI
+  - Extension: CPPI with A Cap
 * CPPI in Practice: A Monte-Carlo Simulation
 
 
