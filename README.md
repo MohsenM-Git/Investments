@@ -40,12 +40,13 @@ The interactive nature of this simulation, which use the `IPyWidgets` library in
 * higher volatility leads more floor vilations and higher conditional shortfalls
 
 ### Liability-Hedging Investment
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-ldi-2.png" width="600"/>
 
 Any financial entity has both assets and liabilities on their balance sheet. Therefore, it is rational to build an investment stratgy that considers both of these sides. It is true that generating positive returns and growing the asset side of the balance sheet always seems attractive. However, returns come at the cost of taking risk, and one's ability to take risk is influenced by the structure of their liabilities. This is where the concept of hedging emerges where the goal of financial management is not to drive the value of our assets as high as possible; it's rather to maintain the ability to meet financial needs.
 
-Hedging, in essence, is an insurance policy against negative financial shocks; whether due to an unexpected fall in realized returns, or through an unexpected increase in liabilities due to a change in the interest rate. Hedging is a complex subject that involves the use of various financial instruments to offset risks. Hedging is different from the concept of diversification. Although, diversification provides some protection against risks associated with individual assets in the portfolio, hedging is concerned with the investor's ability to pay its debt; i.e., the ratio of assets to liabilities. This is specially important as diversification is not effective against systemic risks.
 
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-1.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-2.png" width="450"/>
+Hedging, in essence, is an insurance policy against negative financial shocks; whether due to an unexpected fall in realized returns, or through an unexpected increase in liabilities due to a change in the interest rate. Hedging is a complex subject that involves the use of various financial instruments to offset risks. Hedging is different from the concept of diversification. Although, diversification provides some protection against risks associated with individual assets in the portfolio, hedging is concerned with the investor's ability to pay its debt; i.e., the ratio of assets to liabilities. This is specially important as diversification is not effective against systemic risks.
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-2.png" width="600"/>
 
 I review the concept of hedging through a series of simulation exercises. My focus will be on the evolution of interest-bearing liabilities, and will **NOT** discuss hedging through derivatives. Short-term fluctuations of the interest rate are modeled using the Cox-Ingersoll-Ross (CIR) framework. I simulate the evolution of liabilities under various scenarios for the interest rate, and compute the distribution of the terminal funding ratio -*i.e.,* the ratio of assets to liabilities when liabilities are due. 
 
