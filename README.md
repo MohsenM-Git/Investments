@@ -7,7 +7,7 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
 
 ## An Overview of Simulation Results
 ### Constant Proportion Portfolio Insurance
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="450"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro.png" width="400"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="550"/>
 
 
 
