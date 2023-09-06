@@ -27,7 +27,7 @@ This basic algorithm, as seen above, results in a *significant* drop in drawdown
 
 The second extension that I study here involves imposing a maximum to our portfolio strategy- as we discussed earlier. To implement this strategy, at each point, we should check which constraint is more likely to be binding: floor or cap. Based on that determination, the cushion and risky investment will be computed. 
 
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/cnc.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="450"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/cnc.png" width="500"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="500"/>
 
 Then, I study the efficiency of the CPPI strategy in preventing floor violations in a simulation exercise. For this purpose, I first simulate multiple paths for the evolution of a risky asset -say, a stock price. Then, I build a CPPI portfolio using a risky and a riskless asset -say, government bonds, and verify whether under any circumstances the CPPI portfolio fails to protect the target floor. I use a random walk process to simulate risky asset prices. 
 
