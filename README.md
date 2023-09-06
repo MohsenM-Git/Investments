@@ -19,7 +19,8 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
    - [1.1.  CPPI: From Introduction to Implementation](#1.1)  
         * [Basic CPPI Algorthim ](#1.1.1)
         * [Extension: Drawdown-Based CPPI](#1.1.2) 
-        * [Extension: CPPI with A Cap](#1.1.3)  
+        * [Extension: CPPI with A Cap](#1.1.3)
+          
    - [1.2. CPPI in Practice: A Monte-Carlo Simulation](#1.2) 
         * [A Brownian Motion for Stock Price ](#1.2.1)
         * [Floor Violation Analysis](#1.2.2)        
