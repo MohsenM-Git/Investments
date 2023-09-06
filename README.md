@@ -5,6 +5,34 @@ Modern Portfolio Theory emphasizes the importance of *diversification* where inv
 
 In presence of a risk-free asset -such as government bonds- we can use investment strategies that guarantee certain outcomes. The `Constant Proportion Portfolio Insurance (CPPI)` is a frequently used investment approach that allows us to impose a lower bound to our return. In addition to that, a more comprehensive approach considers the fact that investors usually have time-bounded liabilities, which they must meet. The objective of a `Liability-Hedging Investment`, then, would be to ensure a matching-ratio between assets and liabilities in uncertain environments. This notebook introduces these concepts, implements them in `Python`, and then studies their performance through `Monte-Carlo Simulations`.
 
+
+## Content
+[1. Insurance Strategies: Constant Proportion Portfolio Insurance](#1)
+    
+   - [1.1.  CPPI: From Introduction to Implementation](#1.1)  
+        * [Basic CPPI Algorthim ](#1.1.1)
+        * [Extension: Drawdown-Based CPPI](#1.1.2) 
+        * [Extension: CPPI with A Cap](#1.1.3)
+          
+   - [1.2. CPPI in Practice: A Monte-Carlo Simulation](#1.2) 
+        * [A Brownian Motion for Stock Price ](#1.2.1)
+        * [Floor Violation Analysis](#1.2.2)        
+     &nbsp;
+     
+[2. Liability-Hedging Strategies through Asset Allocation](#2) 
+
+   - [2.1. Short-Term Fluctuations: Cox-Ingersoll-Ross Model](#2.1) 
+        * [Evolution of Liabilities](#2.1.1)
+        * [Funding Ratio and the Interest Rate Risk](#2.1.2)  
+    
+   - [2.2. Investment, Liabilities, and Funding Ratio](#2.2) 
+        * [Performance Seeking Portfolio (PSP) vs. Liability Hedging Portfolio (LHP)](#2.2.1)
+        * [Duration-Matching Bond Portfolios](#2.2.2)
+        * [Simulation of Coupon-Bearing Bonds](#2.2.3)
+        * [Asset Allocation Problem: A Simulation](#2.2.4)
+
+
+    
 ## An Overview of Simulation Results
 ### Constant Proportion Portfolio Insurance
 <img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="550"/>
@@ -38,35 +66,31 @@ The interactive nature of this simulation, which use the `IPyWidgets` library in
 * Higher values for the multiplier leads to more floor vilations and higher conditional shortfalls
 * higher volatility leads more floor vilations and higher conditional shortfalls
 
-
-
 ### Liability-Hedging Investment
 
+Any financial entity has both assets and liabilities on their balance sheet. Therefore, it is rational to build an investment stratgy that considers both of these sides. It is true that generating positive returns and growing the asset side of the balance sheet always seems attractive. However, returns come at the cost of taking risk, and one's ability to take risk is influenced by the structure of their liabilities. This is where the concept of hedging emerges where the goal of financial management is not to drive the value of our assets as high as possible; it's rather to maintain the ability to meet financial needs.
 
-## Content
-[1. Insurance Strategies: Constant Proportion Portfolio Insurance](#1)
-    
-   - [1.1.  CPPI: From Introduction to Implementation](#1.1)  
-        * [Basic CPPI Algorthim ](#1.1.1)
-        * [Extension: Drawdown-Based CPPI](#1.1.2) 
-        * [Extension: CPPI with A Cap](#1.1.3)
-          
-   - [1.2. CPPI in Practice: A Monte-Carlo Simulation](#1.2) 
-        * [A Brownian Motion for Stock Price ](#1.2.1)
-        * [Floor Violation Analysis](#1.2.2)        
-     &nbsp;
-     
-[2. Liability-Hedging Strategies through Asset Allocation](#2) 
+Hedging, in essence, is an insurance policy against negative financial shocks; whether due to an unexpected fall in realized returns, or through an unexpected increase in liabilities due to a change in the interest rate. Hedging is a complex subject that involves the use of various financial instruments to offset risks. Hedging is different from the concept of diversification. Although, diversification provides some protection against risks associated with individual assets in the portfolio, hedging is concerned with the investor's ability to pay its debt; i.e., the ratio of assets to liabilities. This is specially important as diversification is not effective against systemic risks.
 
-   - [2.1. Short-Term Fluctuations: Cox-Ingersoll-Ross Model](#2.1) 
-        * [Evolution of Liabilities](#2.1.1)
-        * [Funding Ratio and the Interest Rate Risk](#2.1.2)  
-    
-   - [2.2. Investment, Liabilities, and Funding Ratio](#2.2) 
-        * [Performance Seeking Portfolio (PSP) vs. Liability Hedging Portfolio (LHP)](#2.2.1)
-        * [Duration-Matching Bond Portfolios](#2.2.2)
-        * [Simulation of Coupon-Bearing Bonds](#2.2.3)
-        * [Asset Allocation Problem: A Simulation](#2.2.4)
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-1.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-2.png" width="450"/>
+
+I review the concept of hedging through a series of simulation exercises. My focus will be on the evolution of interest-bearing liabilities, and will **NOT** discuss hedging through derivatives. Short-term fluctuations of the interest rate are modeled using the Cox-Ingersoll-Ross (CIR) framework. I simulate the evolution of liabilities under various scenarios for the interest rate, and compute the distribution of the terminal funding ratio -*i.e.,* the ratio of assets to liabilities when liabilities are due. 
+
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-3.png" width="650"/>
+
+Then, I turn to a more realisitc problem where we choose our asset allocation between a `Performance Seeking Portfolio (PSP)`, which maximizes the `Sharpe Ratio`, and the `Liability Hedging Portfolio (LHP)` whose aim is to ensure that the payoffs match future liabilities.
+
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/ldi.png" width="500"/>
+
+The optimal allocation depends on the utility function and risk-tolerance of the investor. However, in a simulation exercise, we can analyze the implications of different allocations between the `LHP` and `PSP` portfolios. The key to building a LHP portfolio is to be able to combine various bonds with different coupon structures in a way that it replicates the behavior of our liability. A first step towards that goal is to be able to understand the `effective` duration of a bond. Although, every bond has a nominal maturity, a better metric is the so-called `Macaulay duration`.
+
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/dmp.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-4.png" width="450"/>
+
+This leads to our final simulation where I analyze the return distribution of the LHP, PSP, and various allocations between the two under multiple scenarios for the risky asset as well as the short-term interest rate. 
+
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-5.png" width="800"/>
+
+
          
 
 ## Data
