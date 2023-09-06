@@ -1,5 +1,5 @@
 # Liability-Hedging and Insurance Investment: Monte-Carlo Simulations
-
+<img src="https://github.com/MohsenM-Git/Investments/tree/main/Images/p0.png" width="300"/>
 
 Modern Portfolio Theory emphasizes the importance of *diversification* where investor's can improve their reward-to-risk ratio. Basically, this theory shows how we lower our exposure to  unrewarded idiosyncratic risk by desinging a well-diversified portfolio. This approach, though very helpful, is not without any shortcomings. One example is that diversification does not provide any protection against *systemic risk*. In particualr, during market crashes, since the correlation of assets increases, it would be very difficult to protect investors' wealth by simply designing a diversified portfolio. 
 
