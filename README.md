@@ -3,8 +3,15 @@
 
 Modern Portfolio Theory emphasizes the importance of *diversification* where investor's can improve their reward-to-risk ratio. This theory shows how we can lower our exposure to unrewarded idiosyncratic risk by desinging a well-diversified portfolio. This approach, though very helpful, is not without any shortcomings. For example, diversification does not provide any protection against *systemic risk*. In other words, during market crashes, since the correlation of assets increases, it would be very difficult to protect investors' wealth by simply designing a diversified portfolio. 
 
-In presence of a risk-free asset -such as government bonds- we can use investment strategies that guarantee certain outcomes. The `Constant Proportion Portfolio Insurance (CPPI)` is a frequently used investment approach that allows us to impose a lower bound to our return. In addition to that, a more comprehensive approach considers the fact that investors usually have time-bounded liabilities, which they must meet. The objective of a `Liability-Hedging Investment`, then, would be to ensure a matching-ratio between assets and liabilities in uncertain environments. This notebook introduces these concepts, briefly, implements them in `Python`, and then studies their performance through `Monte-Carlo Simulations`.
+In presence of a risk-free asset -such as government bonds- we can use investment strategies that guarantee certain outcomes. The `Constant Proportion Portfolio Insurance (CPPI)` is a frequently used investment approach that allows us to impose a lower bound to our return. In addition to that, a more comprehensive approach considers the fact that investors usually have time-bounded liabilities, which they must meet. The objective of a `Liability-Hedging Investment`, then, would be to ensure a matching-ratio between assets and liabilities in uncertain environments. This notebook introduces these concepts, implements them in `Python`, and then studies their performance through `Monte-Carlo Simulations`.
 
+## An Overview of Simulation Results
+### Constant Proportion Portfolio Insurance
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="450"/>
+
+
+
+### Liability-Hedging Investment
 
 ## Content
 [1. Insurance Strategies: Constant Proportion Portfolio Insurance](#1)
@@ -31,10 +38,6 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
         * [Simulation of Coupon-Bearing Bonds](#2.2.3)
         * [Asset Allocation Problem: A Simulation](#2.2.4)
          
-## Simulation and Results
-
-
-
 
 ## Data
 Two datasets used:
