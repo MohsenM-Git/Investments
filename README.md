@@ -46,15 +46,15 @@ Any financial entity has both assets and liabilities on their balance sheet. The
 
 
 Hedging, in essence, is an insurance policy against negative financial shocks; whether due to an unexpected fall in realized returns, or through an unexpected increase in liabilities due to a change in the interest rate. Hedging is a complex subject that involves the use of various financial instruments to offset risks. Hedging is different from the concept of diversification. Although, diversification provides some protection against risks associated with individual assets in the portfolio, hedging is concerned with the investor's ability to pay its debt; i.e., the ratio of assets to liabilities. This is specially important as diversification is not effective against systemic risks.
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-2.png" width="600"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro-2.png" width="700"/>
 
 I review the concept of hedging through a series of simulation exercises. My focus will be on the evolution of interest-bearing liabilities, and will **NOT** discuss hedging through derivatives. Short-term fluctuations of the interest rate are modeled using the Cox-Ingersoll-Ross (CIR) framework. I simulate the evolution of liabilities under various scenarios for the interest rate, and compute the distribution of the terminal funding ratio -*i.e.,* the ratio of assets to liabilities when liabilities are due. 
 
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-3.png" width="650"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/sim-3.png" width="700"/>
 
 Then, I turn to a more realisitc problem where we choose our asset allocation between a `Performance Seeking Portfolio (PSP)`, which maximizes the `Sharpe Ratio`, and the `Liability Hedging Portfolio (LHP)` whose aim is to ensure that the payoffs match future liabilities.
 
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/ldi.png" width="500"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/ldi.png" width="700"/>
 
 The optimal allocation depends on the utility function and risk-tolerance of the investor. However, in a simulation exercise, we can analyze the implications of different allocations between the `LHP` and `PSP` portfolios. The key to building a LHP portfolio is to be able to combine various bonds with different coupon structures in a way that it replicates the behavior of our liability. A first step towards that goal is to be able to understand the `effective` duration of a bond. Although, every bond has a nominal maturity, a better metric is the so-called `Macaulay duration`.
 
