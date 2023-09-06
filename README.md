@@ -8,9 +8,26 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
 ## An Overview of Simulation Results
 ### Constant Proportion Portfolio Insurance
 <img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/intro.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="550"/>
+While seeking higher returns is always important, a crucial aspect of an effective investment strategy is loss prevention. `Constant Proportion Portfolio Insurance (CPPI)` is an intuitive investment strategy that aims to achieve the second objective -*i.e.,* to protect investor's capital. Under CPPI, we target a minimum level of wealth that we can tolerate -*i.e.*, **protection floor**. For instance, we can set the floor to be at 80 percent of the initial capital. The CPPI strategy ensures that we do not violate this floor. The intuition behind this algorithm is to increase the risky investment in the portfolio during bull markets, and decrease it -by investing more in the risk-free asset- during bear markts. This is done so that if the decline in the risky asset price continues, we gradually reduce our investmnet in risky asset to a point we are no longer subject to risk so that the protection floor is not violated.
+
+To demonstrate this strategy, I usehistorical monthly returns of the US Stock market obtained from [this](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html) webpage, which starts from `1926-07` and runs through `2023-06`. I work with the 30 industry classification. 
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/ms.png" width="600"/>
+
+The CPPI algorithm requires asset allocation across `risky` and `rsikless` assets. In this simulation I consider the following assets:
+* Risky Assets: a subset of industry indices
+* Riskless Asset: an asset with a 3 percent return annually 
+A bsic implementing of this algrithm requires (a) computing the cushion (asset value minus floor); and (b) computing the allocation to risky and riskless assets.
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/basic-1.png" width="600"/>
 
 
 
+
+1) Drawdowns have significantly dropped, which shows the insurance power of the strategy.
+2) Sharpe Ratios have expectedly dropped.
+3) We have lost top returns and gained lower volatility.
+4) Skewness is generally speaking more negative, which again shows that we have lost top returns.
+
+5) 
 ### Liability-Hedging Investment
 
 
