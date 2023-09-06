@@ -1,16 +1,9 @@
 # Liability-Hedging and Insurance Investment: Monte-Carlo Simulations
 <img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/p0.png" width="700"/>
 
-Modern Portfolio Theory emphasizes the importance of *diversification* where investor's can improve their reward-to-risk ratio. Basically, this theory shows how we lower our exposure to  unrewarded idiosyncratic risk by desinging a well-diversified portfolio. This approach, though very helpful, is not without any shortcomings. One example is that diversification does not provide any protection against *systemic risk*. In particualr, during market crashes, since the correlation of assets increases, it would be very difficult to protect investors' wealth by simply designing a diversified portfolio. 
+Modern Portfolio Theory emphasizes the importance of *diversification* where investor's can improve their reward-to-risk ratio. This theory shows how we can lower our exposure to unrewarded idiosyncratic risk by desinging a well-diversified portfolio. This approach, though very helpful, is not without any shortcomings. For example, diversification does not provide any protection against *systemic risk*. In other words, during market crashes, since the correlation of assets increases, it would be very difficult to protect investors' wealth by simply designing a diversified portfolio. 
 
-In presence of a risk-free asset -such as government bonds- we can use investment strategies that guarantee desired outcomes. The `Constant Proportion Portfolio Insurance (CPPI)` is a frequently used investment approach that allows us to impose a lower bound to our return. In addition to that, we should consider the fact that investors usually have time-bounded liabilities, which they must meet. The objective of a `Liability-Hedging Investment`, then, would be to ensures a matching-ratio between assets and liabilities in uncertain environments. This notebook introduces these concepts and studies their performance through Monte-Carlo Simulations.
-
-
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/intro.png" width="300"/> <img src="https://github.com/MohsenM-Git/cppi/blob/main/ms.png" width="350"/> <img src="https://github.com/MohsenM-Git/cppi/blob/main/cppi-1.png" width="350"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/dd-cppi.png" width="315"/> <img src="https://github.com/MohsenM-Git/cppi/blob/main/dd-cap.png" width="315"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/cnc.png" width="350"/> 
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/gbm.png" width="650"/>
-<img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-1.png" width="400"/><img src="https://github.com/MohsenM-Git/cppi/blob/main/sim-2.png" width="550"/>
+In presence of a risk-free asset -such as government bonds- we can use investment strategies that guarantee certain outcomes. The `Constant Proportion Portfolio Insurance (CPPI)` is a frequently used investment approach that allows us to impose a lower bound to our return. In addition to that, a more comprehensive approach considers the fact that investors usually have time-bounded liabilities, which they must meet. The objective of a `Liability-Hedging Investment`, then, would be to ensure a matching-ratio between assets and liabilities in uncertain environments. This notebook introduces these concepts, briefly, implements them in `Python`, and then studies their performance through `Monte-Carlo Simulations`.
 
 
 ## Content
