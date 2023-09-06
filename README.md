@@ -20,7 +20,6 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
         * [Basic CPPI Algorthim ](#1.1.1)
         * [Extension: Drawdown-Based CPPI](#1.1.2) 
         * [Extension: CPPI with A Cap](#1.1.3)  
-     &nbsp;       
    - [1.2. CPPI in Practice: A Monte-Carlo Simulation](#1.2) 
         * [A Brownian Motion for Stock Price ](#1.2.1)
         * [Floor Violation Analysis](#1.2.2)        
@@ -31,7 +30,7 @@ In presence of a risk-free asset -such as government bonds- we can use investmen
    - [2.1. Short-Term Fluctuations: Cox-Ingersoll-Ross Model](#2.1) 
         * [Evolution of Liabilities](#2.1.1)
         * [Funding Ratio and the Interest Rate Risk](#2.1.2)  
-     &nbsp;       
+    
    - [2.2. Investment, Liabilities, and Funding Ratio](#2.2) 
         * [Performance Seeking Portfolio (PSP) vs. Liability Hedging Portfolio (LHP)](#2.2.1)
         * [Duration-Matching Bond Portfolios](#2.2.2)
