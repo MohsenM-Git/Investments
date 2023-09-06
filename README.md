@@ -17,17 +17,17 @@ The CPPI algorithm requires asset allocation across `risky` and `rsikless` asset
 * Risky Assets: a subset of industry indices
 * Riskless Asset: an asset with a 3 percent return annually 
 A bsic implementing of this algrithm requires (a) computing the cushion (asset value minus floor); and (b) computing the allocation to risky and riskless assets.
-<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/basic-1.png" width="600"/>
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/cppi-1.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/basic-1.png" width="450"/>
+
+This basic algorithm, as seen above, results in a *significant* drop in drawdowns of assets, and lower volatilities. Then, I extend this algrothim. The basic algorithm of CPPI protects a fixed floor -e.g., in our previous example, this floor was 90 percent of our initial investment. However, this does not seem to be efficient; specially as over time, the value of our portfolio could grow so high than the floor. An alternative algorithm is the `drawdown-based CPPI` where we impose an explicit upper limit to our drawdown. In other words, our objective would be to ensure that the loss on the CPPI portfolio does not exceed the protected level. This is going to lead to a dynamic definition of the floor where instead of protecting a fixed wealth level, we shoulld protect an upper limit to our drawdon every period. For example, in the next example, I want to limit the drawdown to 15 percent. 
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/dd-cppi.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/dd-cap.png" width="450"/>
+The second extension that I study here involves imposing a maximum to our portfolio strategy- as we discussed earlier. To implement this strategy, at each point, we should check which constraint is more likely to be binding: floor or cap. Based on that determination, the cushion and risky investment will be computed. 
+<img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/cnc.png" width="450"/><img src="https://github.com/MohsenM-Git/Investments/blob/main/Images/gbm.png" width="450"/>
+
+Then, I study the efficiency of the CPPI strategy in preventing floor violations in a simulation exercise. For this purpose, I first simulate multiple paths for the evolution of a risky asset -say, a stock price. Then, I build a CPPI portfolio using a risky and a riskless asset -say, government bonds, and verify whether under any circumstances the CPPI portfolio fails to protect the target floor. I use a random walk process to simulate risky asset prices. 
 
 
 
-
-1) Drawdowns have significantly dropped, which shows the insurance power of the strategy.
-2) Sharpe Ratios have expectedly dropped.
-3) We have lost top returns and gained lower volatility.
-4) Skewness is generally speaking more negative, which again shows that we have lost top returns.
-
-5) 
 ### Liability-Hedging Investment
 
 
